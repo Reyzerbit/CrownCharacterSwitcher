@@ -1,0 +1,11 @@
+name: CrownCharacterSwitcher
+main: com.reyzerbit.CrownCharacterSwitcher.CCS
+version: 1.0
+description: This plugin is an addon to the plugin CrownCore, adding more mechanics to the character system.
+api-version: 1.14
+author: Reyzerbit
+website: www.reyzerbit.com
+prefix: CCS
+softdepend: [Vault, CrownCore]
+commands:
+permissions:

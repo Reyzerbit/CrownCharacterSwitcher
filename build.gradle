@@ -1,0 +1,35 @@
+
+plugins {
+
+	id 'eclipse'
+    id 'java-library'
+    
+    id 'maven-publish'
+    
+}
+
+repositories {
+
+	maven { url 'https://hub.spigotmc.org/nexus/content/repositories/public/' }
+	
+	mavenCentral()
+	
+	maven { url 'https://jitpack.io' }
+    
+}
+
+dependencies {
+	
+	// RPGCore
+	api 'com.github.Reyzerbit:CrownCore:1.8'
+	
+	// Spigot
+	implementation 'org.spigotmc:spigot-api:1.14.4-R0.1-SNAPSHOT'
+	
+	// Vault
+	implementation "com.github.MilkBowl:VaultAPI:1.7"
+	
+	//JUnit
+    testImplementation 'junit:junit:4.12'
+    
+}
