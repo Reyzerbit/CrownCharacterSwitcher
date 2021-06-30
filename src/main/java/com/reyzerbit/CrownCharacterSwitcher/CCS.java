@@ -89,13 +89,13 @@ public class CCS extends JavaPlugin {
     		
     	}
     	
-    	int crownCoreVersion = Integer.parseInt(Bukkit.getPluginManager().getPlugin("CrownCore").getDescription().getVersion().substring(2));
+    	double crownCoreVersion = Double.parseDouble(Bukkit.getPluginManager().getPlugin("CrownCore").getDescription().getVersion().substring(2));
     	
-    	if(crownCoreVersion < 8) {
+    	if(crownCoreVersion < 8.0) {
     		
     		upToDate = false;
     		
-    		getServer().getLogger().log(Level.SEVERE, "[CCS] Detected CrownCore version 1." + crownCoreVersion + ", which is too old! Upgrade to version 1.8 or later! Disabling CrownCharacterSwitcher.");
+    		getServer().getLogger().log(Level.SEVERE, "[CCS] Detected CrownCore version 1." + crownCoreVersion + ", which is too old! Upgrade to version 1.8.0 or later! Disabling CrownCharacterSwitcher.");
     		getServer().getPluginManager().disablePlugin(this);
     		return;
     		
